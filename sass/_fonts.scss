@@ -9,6 +9,17 @@
     font-style: normal;
     }
 @font-face {
+    font-family: 'OpenSans Regular';
+    font-display: swap;
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
     font-family: 'Bebas Neue Regular';
     font-display: swap;
     src: url('../fonts/BebasNeueRegular.eot');
@@ -17,6 +28,10 @@
         url('../fonts/BebasNeueRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+@mixin base {
+    font-family: 'OpenSans Regular', sans-serif;
 }
 
 @mixin logo {

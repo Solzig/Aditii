@@ -1,0 +1,71 @@
+.featured
+    &-wrap
+        padding: 20px 0    
+        background: #3fc7b5 url('../img/bg.png')
+    &__title
+        margin: 0
+        color: #ffffff
+        font-size: 30px
+        +headline
+        line-height: 25px
+    &-block
+        padding: 48px 0 115px
+
+.catalog
+    &-block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-block
+        &__card 
+            padding: 25px
+            padding-bottom: 40px
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.16)
+            border-bottom: 5px solid #3cc395
+            max-width: 235px
+            width: 100%
+            margin-bottom: 50px
+            display: flex
+            justify-content: center
+            flex-direction: column
+    &-card
+        &__title
+            margin: 12px 0
+            text-align: center
+            font-size: 27px
+            font-weight: bold
+            line-height: 25px
+            +headline
+            color: #afafaf
+        &__link
+            margin: 0 auto
+        &__pricetag 
+            display: flex
+            justify-content: center
+            align-items: center
+        &__price
+            margin-right: 15px
+            font-size: 27px
+            font-weight: bold
+            color: #afafaf
+            +headline
+            line-height: 25px    
+
+@media (max-width: 991px)
+    .catalog
+        &-block
+            &__card
+                max-width: 25%
+                padding: 25px 15px
+@media (max-width: 559px)
+    .catalog
+        &-block
+            &__card
+                max-width: 40%
+                padding: 25px 15px                
+@media (max-width: 376px)
+    .catalog
+        &-block
+            &__card
+                max-width: 100%
+                padding: 25px 15px                    
