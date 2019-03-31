@@ -1,0 +1,124 @@
+
+.navbar
+    background-color: #ffffff
+    &-wrap
+        padding: 20px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        color: #3cc3b5
+        font-size: 50px
+        line-height: 20px
+        +logo
+    &__search
+        max-width: 435px
+        width: 100%
+        &-input
+            background: url('../img/navbar/search.png') no-repeat
+            background-position: calc(100% - 8px)
+            width: calc(100% - 44px)      
+            height: 30px
+            border: 1px solid #e1e1e1  
+            color: #a1a1a1
+            padding: 0 36px 0 8px
+    &__cart
+        &-link
+            display: flex
+            align-items: center
+            text-decoration: none
+            
+            &:hover 
+                &:last-child
+                    color: #a1a1a1
+                    text-decoration: underline
+        &-image
+            margin-right: 17px
+        &-price
+            color: #a1a1a1
+            font-size: 33px
+            line-height: 20px  
+            font-weight: bold 
+            +headline
+.menu
+    min-height: 36px
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08)
+    background-color: #4ccfc1
+    &__button
+        display: none
+    &__list
+        margin: 0
+        padding: 10px 0
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        &-item
+            padding-right: 20px
+            &:after
+                content: '|'
+                font-size: 20px
+                color: #ffffff
+                position: relative
+                left: 20px
+                font-weight: 400
+                font-family: 'Bebas Neue Regular', sans-serif
+            &:last-child
+                padding-right: 0
+                &:after
+                    content: ''
+        &-link    
+            color: #ffffff
+            font-size: 21px
+            font-weight: 400
+            line-height: 19px
+            text-decoration: none
+            text-transform: uppercase  
+            +headline
+            &:hover
+                color: #a1a1a1
+
+@media (max-width: 991px)
+    .menu
+        &__list
+            &-item
+                padding-right: 0
+                &:after
+                    left: 6px
+@media (max-width: 768px)
+    .navbar
+        &__logo
+            margin-right: 12px
+        &__cart
+            &-image    
+                width: 30px
+                margin: 0 6px 0 12px
+    .menu
+        &__button
+            display: block
+        &__list
+            display: none
+            &-active
+                display: flex
+                justify-content: flex-start
+            &-item
+                margin: 5px
+                margin-right: 20px
+                &:after
+                    left: 12px
+@media (max-width: 436px)
+    .navbar
+        &-wrap
+            position: relative
+            padding-bottom: 60px
+        &__search    
+            position: absolute
+            top: 65px
+    .menu
+        &__list
+            flex-direction: column        
+            &-item
+                width: 100%
+                &:after
+                    content: none    

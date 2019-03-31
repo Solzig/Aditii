@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Lobster';
+    font-display: swap;
+    src: url('../fonts/Lobster.eot');
+    src: url('../fonts/Lobster.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lobster.woff') format('woff'),
+        url('../fonts/Lobster.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Bebas Neue Regular';
+    font-display: swap;
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueRegular.woff') format('woff'),
+        url('../fonts/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin logo {
+    font-family: 'Lobster', sans-serif;
+}
+
+@mixin headline {
+    font-family: 'Bebas Neue Regular', sans-serif;
+}
