@@ -341,6 +341,10 @@ template {
   display: none;
 }
 
+body {
+  min-width: 320px;
+}
+
 .container {
   max-width: 986px;
   margin: auto;
@@ -663,7 +667,7 @@ img {
 }
 
 .featured-block {
-  padding: 48px 0 115px;
+  padding: 48px 0 90px;
 }
 
 .catalog-block {
@@ -751,6 +755,64 @@ img {
   .catalog-block__card {
     max-width: 100%;
     padding: 25px 15px;
+  }
+}
+
+.section_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section_list {
+  padding: 40px 0;
+  background-color: #3cc3b5;
+}
+
+.category-list {
+  margin-bottom: 27px;
+}
+
+.category-list__title {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.category-list__items {
+  margin: 0;
+  margin-top: 27px;
+  padding: 0;
+  list-style: none;
+}
+
+.category-list__item {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.category-list__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 426px) {
+  .catalog-category__list {
+    width: 35%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 376px) {
+  .catalog-category__list {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
