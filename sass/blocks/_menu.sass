@@ -1,0 +1,68 @@
+.menu
+    min-height: 36px
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08)
+    background-color: #4ccfc1
+    &__button
+        display: none
+    &__list
+        margin: 0
+        padding: 10px 0
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        &-item
+            padding-right: 20px
+            &:after
+                content: '|'
+                font-size: 20px
+                color: #ffffff
+                position: relative
+                left: 20px
+                font-weight: 400
+                font-family: 'Bebas Neue Regular', sans-serif
+            &:last-child
+                padding-right: 0
+                &:after
+                    content: ''
+        &-link    
+            color: #ffffff
+            font-size: 21px
+            font-weight: 400
+            line-height: 19px
+            text-decoration: none
+            text-transform: uppercase  
+            +headline
+            &:hover
+                color: #a1a1a1
+
+@media (max-width: 991px)
+    .menu
+        &__list
+            &-item
+                padding-right: 0
+                &:after
+                    left: 6px
+@media (max-width: 768px)
+    .menu
+        &__button
+            display: block
+        &__list
+            display: none
+            &-active
+                display: flex
+                justify-content: flex-start
+            &-item
+                margin: 5px
+                margin-right: 20px
+                &:after
+                    left: 12px
+@media (max-width: 436px)
+    .menu
+        &__list
+            flex-direction: column        
+            &-item
+                width: 100%
+                &:after
+                    content: none

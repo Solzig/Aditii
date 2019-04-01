@@ -3,8 +3,10 @@
     display: flex
     justify-content: center
     flex-wrap: wrap
-    min-width: 1500px
+    max-width: 1200px
     margin: 0 auto
+    .owl-nav 
+        height: 0
 .direction
     position: relative
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.13)
@@ -12,15 +14,19 @@
     &-item 
         display: flex
         align-items: center
+        justify-content: center
+        max-width: 325px
+        height: 190px
         border-right: 1px solid #e7e7e7
-        padding: 25px 60px 33px 35px
+        padding: 0px 35px 0px 35px
         &:last-child
-            border-right: 0
+            //border-right: 0
         &_border-no
-            border-right: 0    
+            //border-right: 0    
     &-card
         padding-left: 25px
     &-card__title 
+        margin: 0
         padding-bottom: 20px
         display: table-caption
         color: #afafaf
@@ -38,6 +44,32 @@
             transform: translateY(-50%)    
             cursor: pointer
             &_left
-                left: 125px
+                left: -6%
             &_right
-                right: 125px    
+                right: -6%   
+
+.owl-carousel .owl-item img
+    width: initial                
+
+@media (max-width: 1240px)
+    .direction
+        &-item        
+            &__image
+                width: 60% !important
+        &-card
+            padding-left: 5px
+        &-slider
+            &__arrow
+                &_left
+                    left: 0
+                &_right
+                    right: 0
+@media (max-width: 436px)                                    
+    .direction
+        &-item 
+            border: 0
+            max-width: 100%
+            display: flex
+            justify-content: center
+            &__image
+                width: 35% !important

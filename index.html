@@ -12,18 +12,18 @@
         <div id="navbar" class="navbar">
             <div class="container">
                 <div class="navbar-wrap">
-                        <div class="logo navbar__logo">Aritii</div>
-                        <!-- /.logo navbar__logo -->
-                        <div class="search navbar__search"><input type="text" class="navbar__search-input"></div>
+                        <div class="logo">Aritii</div>
+                        <!-- /.logo -->
+                        <div class="search"><input type="text" class="search__input"></div>
                         <!-- /.search -->
-                        <div class="navbar__cart">
-                            <a href="#" class="navbar__cart-link">
-                                <img src="img\navbar\cart.png" alt="Cart" class="navbar__cart-image">
-                                <span class="navbar__cart-price">$300</span>
-                            </a> <!-- /.navbar__cart-link -->
-                            <!-- /.cart-price -->
+                        <div class="cart">
+                            <a href="#" class="cart__link">
+                                <img src="img/navbar/cart.png" alt="Cart" class="cart__image" width="41" height="37">
+                                <span class="cart__price">$300</span>
+                            </a>
+                            <!-- /.cart-link -->
                         </div>
-                        <!-- /.navbar__cart -->
+                        <!-- /. cart -->
                 </div>
                 <!-- /.navbar-wrap -->
             </div>
@@ -36,28 +36,29 @@
                 <ul id="menuList" class="menu__list">
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Home</a></li>
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Sale</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link"  href="#">Handbags</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link"  href="#">Wallets</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link"  href="#">Accessories</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link"  href="#">Mens Store</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link"  href="#">Shoes</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link"  href="#">Vintage</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link"  href="#">Services</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link"  href="#">Contact us</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Handbags</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Wallets</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Accessories</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Mens Store</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Shoes</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Vintage</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Services</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Contact us</a></li>
                 </ul>
             </div>
             <!-- /.container -->
         </nav>
         <!-- /.menu -->
     </header>
+    <!-- /.header -->
     <main class="main">
-        <section class="section-hero">
+        <section class="section section-hero">
             <div class="container">
                 <div class="owl-carousel hero-slider">
                     <div class="hero-item">
-                        <img class="hero-item__image" src="img/hero/hero-1.png" alt="" scr="">
+                        <img class="hero-item__image" src="img/hero/hero-1.png" alt="Cowhide Standard Crew" width="278" height="325">
                         <div class="hero-item__description">
-                            <div class="hero-item__title">Cowhide Standard Crew</div>
+                            <h3 class="hero-item__title">Cowhide Standard Crew</h3>
                             <div class="hero-item__text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </div>
                             <button class="button-hero">Shop now</button>
                         </div>
@@ -65,9 +66,9 @@
                     </div>
                     <!-- /.hero-item -->
                     <div class="hero-item">
-                            <img class="hero-item__image" src="img/hero/hero-1.png" alt="" scr="">
+                            <img class="hero-item__image" src="img/hero/hero-1.png" alt="Cowhide Standard Crew" width="278" height="325">
                             <div class="hero-item__description">
-                                <div class="hero-item__title">Cowhide Standard Crew</div>
+                                <h3 class="hero-item__title">Cowhide Standard Crew</h3>
                                 <div class="hero-item__text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </div>
                                 <button class="button-hero">Shop now</button>
                             </div>
@@ -75,9 +76,9 @@
                         </div>
                         <!-- /.hero-item -->
                         <div class="hero-item">
-                                <img class="hero-item__image" src="img/hero/hero-1.png" alt="" scr="">
+                                <img class="hero-item__image" src="img/hero/hero-1.png" alt="Cowhide Standard Crew" width="278" height="325">
                                 <div class="hero-item__description">
-                                    <div class="hero-item__title">Cowhide Standard Crew</div>
+                                    <h3 class="hero-item__title">Cowhide Standard Crew</h3>
                                     <div class="hero-item__text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </div>
                                     <button class="button-hero">Shop now</button>
                                 </div>
@@ -89,45 +90,52 @@
             </div>
         </section>
         <!-- /.section-hero -->
-        <section class="direction">
-            <!-- //TODO добавить карусель -->
-                <div class="direction-slider">
+        <section class="section section-direction">
+                <div class="owl-carousel direction-slider">
                     <div class="direction-item">
                         <img src="img/direction/direction-1.png" alt="" class="direction-item__image">
                         <div class="direction-card">
-                            <span class="direction-card__title">Branded shoes</span>
-                            <buttion class="button-buy button-shop">Shop</buttion>
+                            <h3 class="direction-card__title">Branded shoes</h3>
+                            <a href="#" class="button-buy button-shop">Shop</a>
                         </div>
                     </div>
                     <!-- /.direction-item-->
                     <div class="direction-item">
                         <img src="img/direction/direction-2.png" alt="" class="direction-item__image">
                         <div class="direction-card">
-                            <span class="direction-card__title">Branded thirts</span>
-                            <buttion class="button-buy button-shop">Shop</buttion>
+                            <h3 class="direction-card__title">Branded thirts</h3>
+                            <a href="#" class="button-buy button-shop">Shop</a>
                         </div>
                     </div>
                     <!-- /.direction-item-->
                     <div class="direction-item direction-item_border-no">
                         <img src="img/direction/direction-3.png" alt="" class="direction-item__image">
                         <div class="direction-card">
-                            <span class="direction-card__title">Branded shoes</span>
-                            <buttion class="button-buy button-shop">Shop</buttion>
+                            <h3 class="direction-card__title">Branded shoes</h3>
+                            <a href="#" class="button-buy button-shop">Shop</a>
                         </div>
                     </div>
                     <!-- /.direction-item-->
-                <img src="img/direction/left.png" alt="" class="direction-slider__arrow direction-slider__arrow_left">
-                <img src="img/direction/right.png" alt="" class="direction-slider__arrow direction-slider__arrow_right">
+                    <div class="direction-item">
+                        <img src="img/direction/direction-2.png" alt="" class="direction-item__image">
+                        <div class="direction-card">
+                            <h3 class="direction-card__title">Branded thirts</h3>
+                            <a href="#" class="button-buy button-shop">Shop</a>
+                        </div>
+                    </div>
+                    <!-- /.direction-item-->
                 </div>
         </section>
         <!-- /.direction-->
-        <section class="featured">
+        <section class="section section-featured">
             <div class="featured-wrap">
                 <div class="container">
                     <h2 class="featured__title">Featured products</h2>
                     <!-- /.section__title -->
                 </div>
+                <!-- /.container -->
             </div>
+            <!-- /. featured-wrap -->
             <div class="featured-block">
                 <div class="container">
                     <div class="catalog-block">
@@ -139,7 +147,7 @@
                             <div class="catalog-card__pricetag">
                                 <span class="catalog-card__price">$300</span>
                                 <!-- /.catalog-card__price -->
-                                <buttion class="button-buy">Buy now</buttion>
+                                <a href="#" class="button-buy">Buy now</a>
                                 <!-- /.button-buy -->
                             </div>
                             <!-- /.catalog-card__pricetag -->
@@ -153,7 +161,7 @@
                             <div class="catalog-card__pricetag">
                                 <span class="catalog-card__price">$300</span>
                                 <!-- /.catalog-card__price -->
-                                <buttion class="button-buy">Buy now</buttion>
+                                <a href="#" class="button-buy">Buy now</a>
                                 <!-- /.button-buy -->
                             </div>
                             <!-- /.catalog-card__pricetag -->
@@ -167,7 +175,7 @@
                             <div class="catalog-card__pricetag">
                                 <span class="catalog-card__price">$300</span>
                                 <!-- /.catalog-card__price -->
-                                <buttion class="button-buy">Buy now</buttion>
+                                <a href="#" class="button-buy">Buy now</a>
                                 <!-- /.button-buy -->
                             </div>
                             <!-- /.catalog-card__pricetag -->
@@ -181,7 +189,7 @@
                             <div class="catalog-card__pricetag">
                                 <span class="catalog-card__price">$300</span>
                                 <!-- /.catalog-card__price -->
-                                <buttion class="button-buy">Buy now</buttion>
+                                <a href="#" class="button-buy">Buy now</a>
                                 <!-- /.button-buy -->
                             </div>
                             <!-- /.catalog-card__pricetag -->
@@ -195,7 +203,7 @@
                             <div class="catalog-card__pricetag">
                                 <span class="catalog-card__price">$300</span>
                                 <!-- /.catalog-card__price -->
-                                <buttion class="button-buy">Buy now</buttion>
+                                <a href="#" class="button-buy">Buy now</a>
                                 <!-- /.button-buy -->
                             </div>
                             <!-- /.catalog-card__pricetag -->
@@ -209,7 +217,7 @@
                             <div class="catalog-card__pricetag">
                                 <span class="catalog-card__price">$300</span>
                                 <!-- /.catalog-card__price -->
-                                <buttion class="button-buy">Buy now</buttion>
+                                <a href="#" class="button-buy">Buy now</a>
                                 <!-- /.button-buy -->
                             </div>
                             <!-- /.catalog-card__pricetag -->
@@ -221,13 +229,12 @@
                 <!-- /.container -->
             </div>
             <!-- /.featured-block -->
-            <!-- /.container -->
         </section>
         <!-- /.featured -->
-        <section class="section_list">
+        <section class="section section-list">
             <div class="container">
                 <div class="section_wrap">
-                    <div class="category__list">
+                    <div class="category-list">
                         <h2 class="category-list__title">Featured sale</h2>
                         <!-- /.category-list__title -->
                         <ul class="category-list__items">
@@ -309,7 +316,6 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <!-- /.header -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="vendor/js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>

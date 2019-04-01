@@ -643,7 +643,8 @@ img {
 }
 
 .button-buy {
-  padding: 10px;
+  padding: 8px;
+  border: 2px solid #3cc395;
   background-color: #3cc395;
   border-radius: 5px;
   color: #ffffff;
@@ -653,11 +654,12 @@ img {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button-buy:hover {
+  border: 2px solid #a1a1a1;
   color: #a1a1a1;
-  text-decoration: underline;
   background-color: #ffffff;
 }
 
@@ -672,11 +674,19 @@ img {
   border: 3px solid #ffffff;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button-hero:hover {
   background-color: #3cc395;
   border-color: #3cc395;
+}
+
+.logo {
+  color: #3cc3b5;
+  font-size: 50px;
+  line-height: 20px;
+  font-family: 'Lobster', sans-serif;
 }
 
 .navbar {
@@ -696,19 +706,12 @@ img {
           align-items: center;
 }
 
-.navbar__logo {
-  color: #3cc3b5;
-  font-size: 50px;
-  line-height: 20px;
-  font-family: 'Lobster', sans-serif;
-}
-
-.navbar__search {
+.search {
   max-width: 435px;
   width: 100%;
 }
 
-.navbar__search-input {
+.search__input {
   background: url("../img/navbar/search.png") no-repeat;
   background-position: calc(100% - 8px);
   width: calc(100% - 44px);
@@ -718,7 +721,11 @@ img {
   padding: 0 36px 0 8px;
 }
 
-.navbar__cart-link {
+.cart {
+  display: inline-block;
+}
+
+.cart__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,21 +735,51 @@ img {
   text-decoration: none;
 }
 
-.navbar__cart-link:hover:last-child {
+.cart__link:hover:last-child {
   color: #a1a1a1;
   text-decoration: underline;
 }
 
-.navbar__cart-image {
+.cart__image {
   margin-right: 17px;
 }
 
-.navbar__cart-price {
+.cart__price {
   color: #a1a1a1;
   font-size: 33px;
   line-height: 20px;
   font-weight: bold;
   font-family: 'Bebas Neue Regular', sans-serif;
+}
+
+@media (max-width: 991px) {
+  .menu__list-item {
+    padding-right: 0;
+  }
+  .menu__list-item:after {
+    left: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-right: 12px;
+  }
+  .cart__image {
+    width: 30px;
+    margin: 0 6px 0 12px;
+  }
+}
+
+@media (max-width: 436px) {
+  .navbar-wrap {
+    position: relative;
+    padding-bottom: 60px;
+  }
+  .navbar .search {
+    position: absolute;
+    top: 65px;
+  }
 }
 
 .menu {
@@ -819,13 +856,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  .navbar__logo {
-    margin-right: 12px;
-  }
-  .navbar__cart-image {
-    width: 30px;
-    margin: 0 6px 0 12px;
-  }
   .menu__button {
     display: block;
   }
@@ -850,14 +880,6 @@ img {
 }
 
 @media (max-width: 436px) {
-  .navbar-wrap {
-    position: relative;
-    padding-bottom: 60px;
-  }
-  .navbar__search {
-    position: absolute;
-    top: 65px;
-  }
   .menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -898,6 +920,7 @@ img {
 
 .hero-item__title {
   max-width: 350px;
+  margin: 0;
   padding-bottom: 15px;
   font-family: 'Bebas Neue Regular', sans-serif;
   color: #ffffff;
@@ -951,6 +974,10 @@ img {
     max-width: 100%;
     font-size: 50px;
   }
+  .button-hero {
+    width: 100%;
+    margin-bottom: 5%;
+  }
 }
 
 .direction-slider {
@@ -963,8 +990,12 @@ img {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.direction-slider .owl-nav {
+  height: 0;
 }
 
 .direction {
@@ -981,16 +1012,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 325px;
+  height: 190px;
   border-right: 1px solid #e7e7e7;
-  padding: 25px 60px 33px 35px;
-}
-
-.direction-item:last-child {
-  border-right: 0;
-}
-
-.direction-item_border-no {
-  border-right: 0;
+  padding: 0px 35px 0px 35px;
 }
 
 .direction-card {
@@ -998,6 +1026,7 @@ img {
 }
 
 .direction-card__title {
+  margin: 0;
   padding-bottom: 20px;
   display: table-caption;
   color: #afafaf;
@@ -1019,11 +1048,46 @@ img {
 }
 
 .direction-slider__arrow_left {
-  left: 125px;
+  left: -6%;
 }
 
 .direction-slider__arrow_right {
-  right: 125px;
+  right: -6%;
+}
+
+.owl-carousel .owl-item img {
+  width: initial;
+}
+
+@media (max-width: 1240px) {
+  .direction-item__image {
+    width: 60% !important;
+  }
+  .direction-card {
+    padding-left: 5px;
+  }
+  .direction-slider__arrow_left {
+    left: 0;
+  }
+  .direction-slider__arrow_right {
+    right: 0;
+  }
+}
+
+@media (max-width: 436px) {
+  .direction-item {
+    border: 0;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .direction-item__image {
+    width: 35% !important;
+  }
 }
 
 .featured-wrap {
@@ -1142,7 +1206,7 @@ img {
       flex-wrap: wrap;
 }
 
-.section_list {
+.section-list {
   padding: 40px 0;
   background-color: #3cc3b5;
 }

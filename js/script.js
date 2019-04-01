@@ -2,18 +2,27 @@ $(document).ready(function(){
     $('.hero-slider').owlCarousel({
         nav:false,
         center: true,
-        responsive: {
-            0: {
-                items: 1
-            }, 
-            600: {
-                items: 1
-            }, 
-            900: {
-                items: 1
-            }, 
-            1200: {
-                items: 1
+        loop: true,
+        items: 1
+    })
+    $('.direction-slider').owlCarousel({
+        nav: true,
+        navText: ["<img src='img/direction/left.png' alt='left' class='direction-slider__arrow direction-slider__arrow_left'>",
+                    "<img src='img/direction/right.png' alt='right' class='direction-slider__arrow direction-slider__arrow_right'>"],
+        dots: false,
+        loop: true,
+        center: true,
+        items: 3,
+        startPosition: 1,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
             }
         }
     })
