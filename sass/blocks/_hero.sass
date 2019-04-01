@@ -1,0 +1,56 @@
+.section
+    &-hero 
+        padding: 70px 60px 55px 60px
+        background: #3fc7b5 url("../img/bg.png")
+.hero
+    &-item
+        display: flex
+        justify-content: space-between
+        &__image
+            max-width: 280px
+            margin: 0 auto
+        &__description 
+            max-width: 400px
+            margin: 0 auto
+        &__title
+            max-width: 350px
+            padding-bottom: 15px
+            +headline
+            color: #ffffff
+            font-size: 60px
+            font-weight: bold
+            line-height: 55px
+        &__text
+            color: #ffffff
+            +base
+            font-size: 17px
+            line-height: 28px
+            padding-bottom: 20px
+.section
+    &-hero .owl-dots
+        display: flex
+        justify-content: center
+.section
+    &-hero .owl-dot span 
+        width: 9px
+        height: 9px
+        margin: 5px 7px
+        background: #ffffff
+        display: block
+        -webkit-backface-visibility: visible
+        transition: opacity .2s ease
+        border-radius: 30px    
+.section
+    &-hero .owl-dot.active
+        opacity: 0.51
+
+@media (max-width: 700px)
+    .section
+        &-hero 
+            padding: 25px
+    .hero
+        &-item
+            flex-wrap: wrap
+            &__title
+                max-width: 100%
+                font-size: 50px

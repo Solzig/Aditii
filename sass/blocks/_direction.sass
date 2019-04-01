@@ -1,0 +1,43 @@
+.direction-slider
+    position: relative
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    min-width: 1500px
+    margin: 0 auto
+.direction
+    position: relative
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.13)
+    background-color: #ffffff
+    &-item 
+        display: flex
+        align-items: center
+        border-right: 1px solid #e7e7e7
+        padding: 25px 60px 33px 35px
+        &:last-child
+            border-right: 0
+        &_border-no
+            border-right: 0    
+    &-card
+        padding-left: 25px
+    &-card__title 
+        padding-bottom: 20px
+        display: table-caption
+        color: #afafaf
+        letter-spacing: 1.5px
+        +headline
+        font-size: 27px
+        font-weight: bold
+        line-height: 25px
+    &-slider
+        &__arrow 
+            position: absolute
+            width: 29px
+            height: 88px
+            top: 50%
+            transform: translateY(-50%)    
+            cursor: pointer
+            &_left
+                left: 125px
+            &_right
+                right: 125px    
