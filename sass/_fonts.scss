@@ -31,13 +31,13 @@
 }
 
 @mixin base {
-    font-family: 'OpenSans Regular', sans-serif;
+    font-family: 'OpenSans Regular', "Arial", sans-serif;
 }
 
 @mixin logo {
-    font-family: 'Lobster', sans-serif;
+    font-family: 'Lobster', "Arial", sans-serif;
 }
 
 @mixin headline {
-    font-family: 'Bebas Neue Regular', sans-serif;
+    font-family: 'Bebas Neue Regular', "Arial", sans-serif;
 }

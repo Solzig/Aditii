@@ -196,21 +196,21 @@ body { min-width: 320px; }
 
 @font-face { font-family: 'Bebas Neue Regular'; font-display: swap; src: url("../fonts/BebasNeueRegular.eot"); src: url("../fonts/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-body { font-family: 'OpenSans Regular', sans-serif; }
+body { font-family: 'OpenSans Regular', "Arial", sans-serif; }
 
 img { max-width: 100%; }
 
-.menu__button { padding: 6px 16px 6px 30px; font-family: 'Bebas Neue Regular', sans-serif; font-size: 18px; color: #a1a1a1; text-transform: uppercase; border: 2px solid; background: white url(../img/navbar/menu.png) no-repeat 8px 7px; background-size: 16px; }
+.menu__button { padding: 6px 16px 6px 30px; font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 18px; color: #a1a1a1; text-transform: uppercase; border: 2px solid; background: white url(../img/navbar/menu.png) no-repeat 8px 7px; background-size: 16px; }
 
-.button-buy { padding: 8px; font-family: 'Bebas Neue Regular', sans-serif; font-size: 20px; font-weight: bold; color: #ffffff; text-transform: uppercase; border: 2px solid #3cc395; border-radius: 5px; background-color: #3cc395; letter-spacing: 1.5px; cursor: pointer; text-decoration: none; }
+.button-buy { padding: 8px; font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 20px; font-weight: bold; color: #ffffff; text-transform: uppercase; border: 2px solid #3cc395; border-radius: 5px; background-color: #3cc395; letter-spacing: 1.5px; cursor: pointer; text-decoration: none; }
 
 .button-buy:hover { border: 2px solid #1e624b; background-color: #1e624b; }
 
-.button-hero { font-family: 'Bebas Neue Regular', sans-serif; padding: 10px 25px; text-transform: uppercase; font-size: 27px; font-weight: bold; color: #ffffff; border: 3px solid #ffffff; border-radius: 10px; background: none; cursor: pointer; text-decoration: none; }
+.button-hero { font-family: 'Bebas Neue Regular', "Arial", sans-serif; padding: 10px 25px; text-transform: uppercase; font-size: 27px; font-weight: bold; color: #ffffff; border: 3px solid #ffffff; border-radius: 10px; background: none; cursor: pointer; text-decoration: none; }
 
 .button-hero:hover { background-color: #3cc395; border-color: #3cc395; }
 
-.logo { font-family: 'Lobster', sans-serif; font-size: 50px; line-height: 20px; color: #3cc3b5; }
+.logo { font-family: 'Lobster', "Arial", sans-serif; font-size: 50px; line-height: 20px; color: #3cc3b5; }
 
 .navbar { background-color: #ffffff; }
 
@@ -228,7 +228,7 @@ img { max-width: 100%; }
 
 .cart__image { margin-right: 17px; }
 
-.cart__price { font-family: 'Bebas Neue Regular', sans-serif; font-size: 33px; font-weight: bold; line-height: 20px; color: #a1a1a1; }
+.cart__price { font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 33px; font-weight: bold; line-height: 20px; color: #a1a1a1; }
 
 @media (max-width: 991px) { .menu__list-item { padding-right: 0; }
   .menu__list-item:after { left: 6px; } }
@@ -247,13 +247,13 @@ img { max-width: 100%; }
 
 .menu__list-item { padding-right: 20px; }
 
-.menu__list-item:after { content: '|'; position: relative; left: 20px; font-family: 'Bebas Neue Regular', sans-serif; font-size: 20px; font-weight: 400; color: #ffffff; }
+.menu__list-item:after { content: '|'; position: relative; left: 20px; font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 20px; font-weight: 400; color: #ffffff; }
 
 .menu__list-item:last-child { padding-right: 0; }
 
 .menu__list-item:last-child:after { content: ''; }
 
-.menu__list-link { font-size: 21px; font-weight: 400; line-height: 19px; color: #ffffff; text-decoration: none; text-transform: uppercase; font-family: 'Bebas Neue Regular', sans-serif; }
+.menu__list-link { font-size: 21px; font-weight: 400; line-height: 19px; color: #ffffff; text-decoration: none; text-transform: uppercase; font-family: 'Bebas Neue Regular', "Arial", sans-serif; }
 
 .menu__list-link:hover { color: #a1a1a1; }
 
@@ -278,9 +278,9 @@ img { max-width: 100%; }
 
 .hero-item__description { max-width: 400px; margin: 0 auto; }
 
-.hero-item__title { max-width: 350px; margin: 0; padding-bottom: 15px; font-family: 'Bebas Neue Regular', sans-serif; font-size: 60px; font-weight: bold; line-height: 55px; color: #ffffff; }
+.hero-item__title { max-width: 350px; margin: 0; padding-bottom: 15px; font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 60px; font-weight: bold; line-height: 55px; color: #ffffff; }
 
-.hero-item__text { padding-bottom: 20px; font-family: 'OpenSans Regular', sans-serif; font-size: 17px; line-height: 28px; color: #ffffff; }
+.hero-item__text { padding-bottom: 20px; font-family: 'OpenSans Regular', "Arial", sans-serif; font-size: 17px; line-height: 28px; color: #ffffff; }
 
 .section-hero .owl-dots { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -303,7 +303,7 @@ img { max-width: 100%; }
 
 .direction-card { padding-left: 25px; }
 
-.direction-card__title { display: table-caption; margin: 0; padding-bottom: 20px; font-family: 'Bebas Neue Regular', sans-serif; font-size: 27px; font-weight: bold; line-height: 25px; letter-spacing: 1.5px; color: #afafaf; }
+.direction-card__title { display: table-caption; margin: 0; padding-bottom: 20px; font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 27px; font-weight: bold; line-height: 25px; letter-spacing: 1.5px; color: #afafaf; }
 
 .direction-slider__arrow { position: absolute; top: 50%; width: 29px; height: 88px; cursor: pointer; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
@@ -323,7 +323,7 @@ img { max-width: 100%; }
 
 .featured-wrap { padding: 20px 0; background: #3fc7b5 url("../img/bg.png"); }
 
-.featured__title { margin: 0; font-family: 'Bebas Neue Regular', sans-serif; font-size: 31px; line-height: 25px; color: #ffffff; }
+.featured__title { margin: 0; font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 31px; line-height: 25px; color: #ffffff; }
 
 .featured-block { padding: 48px 0 90px; }
 
@@ -331,13 +331,13 @@ img { max-width: 100%; }
 
 .catalog-block__card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; max-width: 235px; width: 100%; margin-bottom: 50px; padding: 25px; padding-bottom: 40px; border-bottom: 5px solid #3cc395; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.16); box-shadow: 0 0 3px rgba(0, 0, 0, 0.16); }
 
-.catalog-card__title { margin: 12px 0; font-family: 'Bebas Neue Regular', sans-serif; font-size: 27px; font-weight: bold; line-height: 25px; text-align: center; color: #afafaf; }
+.catalog-card__title { margin: 12px 0; font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 27px; font-weight: bold; line-height: 25px; text-align: center; color: #afafaf; }
 
 .catalog-card__link { margin: 0 auto; }
 
 .catalog-card__pricetag { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.catalog-card__price { margin-right: 15px; font-family: 'Bebas Neue Regular', sans-serif; font-size: 27px; font-weight: bold; line-height: 25px; color: #afafaf; }
+.catalog-card__price { margin-right: 15px; font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 27px; font-weight: bold; line-height: 25px; color: #afafaf; }
 
 @media (max-width: 991px) { .catalog-block__card { max-width: 25%; padding: 25px 15px; } }
 
@@ -351,7 +351,7 @@ img { max-width: 100%; }
 
 .category-list { margin-bottom: 27px; }
 
-.category-list__title { margin: 0; color: #ffffff; font-family: 'Bebas Neue Regular', sans-serif; font-size: 27px; font-weight: bold; line-height: 25px; }
+.category-list__title { margin: 0; color: #ffffff; font-family: 'Bebas Neue Regular', "Arial", sans-serif; font-size: 27px; font-weight: bold; line-height: 25px; }
 
 .category-list__items { margin: 0; margin-top: 27px; padding: 0; list-style: none; }
 
