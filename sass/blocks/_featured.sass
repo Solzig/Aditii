@@ -4,10 +4,10 @@
         background: #3fc7b5 url('../img/bg.png')
     &__title
         margin: 0
-        color: #ffffff
-        font-size: 31px
         +headline
+        font-size: 31px
         line-height: 25px
+        color: #ffffff
     &-block
         padding: 48px 0 90px
 
@@ -18,24 +18,24 @@
         flex-wrap: wrap
     &-block
         &__card 
-            padding: 25px
-            padding-bottom: 40px
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.16)
-            border-bottom: 5px solid #3cc395
-            max-width: 235px
-            width: 100%
-            margin-bottom: 50px
             display: flex
             justify-content: center
             flex-direction: column
+            max-width: 235px
+            width: 100%
+            margin-bottom: 50px
+            padding: 25px
+            padding-bottom: 40px
+            border-bottom: 5px solid $button-main
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.16)
     &-card
         &__title
             margin: 12px 0
-            text-align: center
+            +headline
             font-size: 27px
             font-weight: bold
             line-height: 25px
-            +headline
+            text-align: center
             color: #afafaf
         &__link
             margin: 0 auto
@@ -45,11 +45,11 @@
             align-items: center
         &__price
             margin-right: 15px
+            +headline
             font-size: 27px
             font-weight: bold
+            line-height: 25px
             color: #afafaf
-            +headline
-            line-height: 25px    
 
 @media (max-width: 991px)
     .catalog

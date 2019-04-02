@@ -9,16 +9,16 @@
         height: 0
 .direction
     position: relative
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.13)
     background-color: #ffffff
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.13)
     &-item 
         display: flex
         align-items: center
         justify-content: center
-        max-width: 325px
         height: 190px
-        border-right: 1px solid #e7e7e7
+        max-width: 325px
         padding: 0px 35px 0px 35px
+        border-right: 1px solid #e7e7e7
         &:last-child
             //border-right: 0
         &_border-no
@@ -26,23 +26,23 @@
     &-card
         padding-left: 25px
     &-card__title 
+        display: table-caption
         margin: 0
         padding-bottom: 20px
-        display: table-caption
-        color: #afafaf
-        letter-spacing: 1.5px
         +headline
         font-size: 27px
         font-weight: bold
         line-height: 25px
+        letter-spacing: 1.5px
+        color: #afafaf
     &-slider
         &__arrow 
             position: absolute
+            top: 50%
             width: 29px
             height: 88px
-            top: 50%
-            transform: translateY(-50%)    
             cursor: pointer
+            transform: translateY(-50%)
             &_left
                 left: -6%
             &_right
@@ -67,9 +67,9 @@
 @media (max-width: 436px)                                    
     .direction
         &-item 
-            border: 0
-            max-width: 100%
             display: flex
             justify-content: center
+            max-width: 100%
+            border: 0
             &__image
                 width: 35% !important

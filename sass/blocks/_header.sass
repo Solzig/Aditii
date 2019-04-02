@@ -1,26 +1,26 @@
 .logo
-    color: #3cc3b5
+    +logo
     font-size: 50px
     line-height: 20px
-    +logo
+    color: #3cc3b5
 .navbar
     background-color: #ffffff
     &-wrap
-        padding: 20px 0
         display: flex
         justify-content: space-between
         align-items: center
+        padding: 20px 0
 .search
-    max-width: 435px
     width: 100%
+    max-width: 435px
     &__input
-        background: url('../img/navbar/search.png') no-repeat
-        background-position: calc(100% - 8px)
+        padding: 0 36px 0 8px
         width: calc(100% - 44px)      
         height: 30px
-        border: 1px solid #e1e1e1  
         color: #a1a1a1
-        padding: 0 36px 0 8px
+        background: url('../img/navbar/search.png') no-repeat
+        background-position: calc(100% - 8px)
+        border: 1px solid #e1e1e1  
 .cart
     display: inline-block
     &__link
@@ -34,11 +34,11 @@
     &__image
         margin-right: 17px
     &__price
-        color: #a1a1a1
-        font-size: 33px
-        line-height: 20px  
-        font-weight: bold
         +headline
+        font-size: 33px
+        font-weight: bold
+        line-height: 20px 
+        color: #a1a1a1 
 
 @media (max-width: 991px)
     .menu

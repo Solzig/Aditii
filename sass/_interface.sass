@@ -5,43 +5,42 @@ img
 .menu
     &__button
         padding: 6px 16px 6px 30px
+        +headline
+        font-size: 18px
+        color: #a1a1a1
+        text-transform: uppercase
+        border: 2px solid
         background: white url(../img/navbar/menu.png) no-repeat 8px 7px
         background-size: 16px
-        border: 2px solid
-        text-transform: uppercase
-        color: #a1a1a1
-        font-size: 18px
-        +headline
 .button  
     &-buy        
         padding: 8px
-        border: 2px solid #3cc395
-        background-color: #3cc395
-        border-radius: 5px
-        color: #ffffff
         +headline
         font-size: 20px
         font-weight: bold
+        color: #ffffff
         text-transform: uppercase
+        border: 2px solid $button-main
+        border-radius: 5px
+        background-color: $button-main
         letter-spacing: 1.5px
         cursor: pointer  
         text-decoration: none 
         &:hover
-            border: 2px solid #a1a1a1
-            color: #a1a1a1
-            background-color: #ffffff         
+            border: 2px solid $button-main-dark
+            background-color: $button-main-dark       
     &-hero
         +headline
+        padding: 10px 25px
         text-transform: uppercase
         font-size: 27px
         font-weight: bold
         color: #ffffff
-        background: none
-        padding: 10px 25px
         border: 3px solid #ffffff
-        border-radius: 10px  
+        border-radius: 10px
+        background: none  
         cursor: pointer  
         text-decoration: none       
         &:hover       
-            background-color: #3cc395
-            border-color: #3cc395
+            background-color: $button-main
+            border-color: $button-main

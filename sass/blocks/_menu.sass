@@ -1,36 +1,36 @@
 .menu
     min-height: 36px
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08)
     background-color: #4ccfc1
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08)
     &__button
         display: none
     &__list
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
         margin: 0
         padding: 10px 0
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        align-items: center
         list-style: none
         &-item
             padding-right: 20px
             &:after
                 content: '|'
-                font-size: 20px
-                color: #ffffff
                 position: relative
                 left: 20px
+                +headline
+                font-size: 20px
                 font-weight: 400
-                font-family: 'Bebas Neue Regular', sans-serif
+                color: #ffffff
             &:last-child
                 padding-right: 0
                 &:after
                     content: ''
         &-link    
-            color: #ffffff
             font-size: 21px
             font-weight: 400
             line-height: 19px
+            color: #ffffff
             text-decoration: none
             text-transform: uppercase  
             +headline

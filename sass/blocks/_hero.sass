@@ -17,30 +17,30 @@
             margin: 0
             padding-bottom: 15px
             +headline
-            color: #ffffff
             font-size: 60px
             font-weight: bold
             line-height: 55px
-        &__text
             color: #ffffff
+        &__text
+            padding-bottom: 20px
             +base
             font-size: 17px
             line-height: 28px
-            padding-bottom: 20px
+            color: #ffffff
 .section
     &-hero .owl-dots
         display: flex
         justify-content: center
 .section
     &-hero .owl-dot span 
+        display: block
         width: 9px
         height: 9px
         margin: 5px 7px
-        background: #ffffff
-        display: block
+        background-color: #ffffff
+        border-radius: 30px 
         -webkit-backface-visibility: visible
-        transition: opacity .2s ease
-        border-radius: 30px    
+        transition: opacity .2s ease   
 .section
     &-hero .owl-dot.active
         opacity: 0.51
